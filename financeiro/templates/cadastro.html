@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="tudo">
+       <div class="logo">
+           <img src="../static/logo.png">
+       </div>
+
+      <div class="informacoes">
+        <form class="inp" action="{{ url_for('cadastrar') }}" method="post">
+            <input class="inputt" type="text" id="cpf" placeholder="CPF" name="cpf" required><br>
+            <input class="inputt" type="text" id="nome" placeholder="NOME" name="nome" required><br>
+            <input class="inputt" type="email" id="email" placeholder="E-MAIL" name="email" required><br>
+            <input class="inputt" type="password" id="senha" placeholder="SENHA" name="senha" required><br>
+            <div class="btt">
+               <button>Salvar</button>
+           </div>
+        </form>
+
+      </div>
+
+   </div>
+
+
+</body>
+</html>
